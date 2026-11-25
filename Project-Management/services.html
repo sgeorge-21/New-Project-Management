@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shop premium devices and book electronics repair services.">
+  <title>Services | Group 3 Business</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="services">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="topbar">
+    Complimentary delivery over $300
+    <span>•</span>
+    Express repair diagnostics available
+  </div>
+
+  <header class="header">
+    <a class="logo" href="index.html">
+      <b>G3</b>
+      <span>Group 3 <i>Business</i></span>
+    </a>
+    <button class="menu" aria-expanded="false">Menu</button>
+    <nav aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a class="active" href="services.html">Services</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+      <button id="basket" class="basket">Basket <strong>0</strong></button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero wrap">
+      <p class="kicker">Shop & support</p>
+      <h1>
+        Devices that fit<br>
+        <em>your life.</em>
+      </h1>
+      <p class="lead">
+        Curated electronics and careful repair services, backed by people who
+        know their craft.
+      </p>
+    </section>
+
+    <section class="catalog wrap">
+      <div class="filters" role="tablist" aria-label="Product categories">
+        <button class="selected" data-filter="all">All devices</button>
+        <button data-filter="computers">Computers</button>
+        <button data-filter="mobile">Mobile</button>
+        <button data-filter="audio">Audio</button>
+        <button data-filter="repair">Repair</button>
+        <button data-filter="networking">Routers & switches</button>
+      </div>
+      <div id="products" class="products"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="logo">
+      <b>G3</b>
+      <span>Group 3 <i>Business</i></span>
+    </div>
+    <p>Premium electronics. Thoughtful support.</p>
+    <div>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <small>© 2026 Group 3 Business.</small>
+  </footer>
+
+  <aside id="checkout" class="checkout" aria-hidden="true">
+    <button class="close" aria-label="Close checkout">×</button>
+    <p class="kicker">Order details</p>
+    <h2>Complete your order</h2>
+    <div id="summary"></div>
+
+    <form id="payment">
+      <label>
+        Customer name
+        <input name="name" required autocomplete="name" maxlength="120">
+      </label>
+      <label>
+        Email address
+        <input name="email" type="email" required autocomplete="email" maxlength="254">
+      </label>
+      <label>
+        Product name
+        <input name="productName" type="text" maxlength="500">
+      </label>
+      <label>
+        Quantity
+        <input name="quantity" type="text" inputmode="numeric" maxlength="3">
+      </label>
+      <label>
+        Payment method
+        <select name="paymentMethod" required>
+          <option value="" disabled selected>Select a payment method</option>
+          <option value="visa">Visa card</option>
+          <option value="orange-money">Orange Money</option>
+          <option value="mobile-money">Mobile Money</option>
+        </select>
+      </label>
+      <p class="payment-note">Never enter or share your payment PIN. This demo records orders but does not process payments.</p>
+      <button class="button dark" type="submit">Submit order <span>→</span></button>
+      <p class="status" role="status"></p>
+      <small>Only your selected payment method is recorded. Card numbers and PINs are not collected.</small>
+    </form>
+  </aside>
+  <div id="shade"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

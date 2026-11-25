@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Group 3 Business: premium electronics, repairs and support.">
+  <title>Home | Group 3 Business</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="topbar">
+    Complimentary delivery over $300
+    <span>•</span>
+    Express repair diagnostics available
+  </div>
+
+  <header class="header">
+    <a class="logo" href="index.html">
+      <b>G3</b>
+      <span>Group 3 <i>Business</i></span>
+    </a>
+    <button class="menu" aria-expanded="false">Menu</button>
+    <nav aria-label="Primary navigation">
+      <a class="active" href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+      <button class="auth-link" data-auth-mode="login">Log in</button>
+      <button class="auth-link auth-signup" data-auth-mode="signup">Sign up</button>
+      <button id="basket" class="basket">Basket <strong>0</strong></button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap">
+      <div>
+        <p class="kicker">Technology, thoughtfully delivered</p>
+        <h1>
+          Better tech.<br>
+          <em>Better supported.</em>
+        </h1>
+        <p class="lead">
+          Shop trusted electronics, get expert repairs, and make every device
+          work harder for you.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="services.html">
+            Explore services
+            <span>→</span>
+          </a>
+          <a class="underlink" href="about.html">Why Group 3? ↗</a>
+        </div>
+
+        <div class="metrics">
+          <div>
+            <b>4.9/5</b>
+            <small>customer rating</small>
+          </div>
+          <div>
+            <b>24h</b>
+            <small>express repairs</small>
+          </div>
+          <div>
+            <b>1 yr</b>
+            <small>device warranty</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="Laptop, smartphone and headphones">
+        <div class="halo"></div>
+        <div class="laptop"><span>G3</span></div>
+        <div class="phone">
+          <span>09:41</span>
+          <b>G3</b>
+        </div>
+        <div class="headphones"></div>
+        <label>Curated essentials <b>01</b></label>
+      </div>
+    </section>
+
+    <section class="trust">
+      <span>SECURE CHECKOUT</span>
+      <span>✓ VERIFIED DEVICES</span>
+      <span>LOCAL EXPERTS</span>
+      <span>30-DAY RETURNS</span>
+    </section>
+
+    <section class="split wrap">
+      <div>
+        <p class="kicker">Shop & support</p>
+        <h2>
+          Devices that fit<br>
+          <em>your life.</em>
+        </h2>
+      </div>
+      <div>
+        <p>
+          From first look to long-term care, our team helps you choose,
+          maintain and enjoy technology with confidence.
+        </p>
+        <a class="button dark" href="services.html">
+          Browse devices
+          <span>→</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="catalog wrap">
+      <div class="section-heading">
+        <div>
+          <p class="kicker">Featured selection</p>
+          <h2>
+            Tech to buy.<br>
+            <em>Support to trust.</em>
+          </h2>
+        </div>
+        <p>
+          Shop everyday electronics or choose our care plan for reliable
+          servicing after purchase.
+        </p>
+      </div>
+      <div id="products" class="products" data-limit="6"></div>
+    </section>
+  </main>
+
+  <aside id="auth-modal" class="auth-modal" aria-hidden="true">
+    <button class="close auth-close" aria-label="Close account form">×</button>
+    <p class="kicker">Optional customer account</p>
+    <h2 id="auth-title">Log in</h2>
+    <p class="auth-note">
+      Save your preferences and keep track of your orders. You can also continue
+      as a guest.
+    </p>
+    <form id="auth-form">
+      <label>
+        Email address
+        <input id="auth-email" name="email" type="email" required autocomplete="email">
+      </label>
+      <label>
+        Password
+        <input id="auth-password" name="password" type="password" required minlength="12" maxlength="200" autocomplete="current-password">
+      </label>
+      <button class="button dark" type="submit">
+        <span id="auth-submit-label">Log in</span>
+        <span>→</span>
+      </button>
+    </form>
+    <div class="auth-divider"><span>or</span></div>
+    <button id="google-auth" class="google-button" type="button">
+      <svg class="google-mark" viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="#4285F4" d="M23.49 12.27c0-.79-.07-1.55-.2-2.27H12v4.3h6.45a5.51 5.51 0 0 1-2.39 3.61v3h3.87c2.27-2.09 3.56-5.17 3.56-8.64Z"/>
+        <path fill="#34A853" d="M12 24c3.24 0 5.96-1.07 7.95-2.9l-3.87-3c-1.07.72-2.44 1.15-4.08 1.15-3.13 0-5.79-2.12-6.74-4.97h-4v3.09A12 12 0 0 0 12 24Z"/>
+        <path fill="#FBBC05" d="M5.26 14.28A7.2 7.2 0 0 1 4.88 12c0-.79.14-1.56.38-2.28V6.63h-4A12 12 0 0 0 0 12c0 1.94.46 3.78 1.26 5.37l4-3.09Z"/>
+        <path fill="#EA4335" d="M12 4.75c1.77 0 3.36.61 4.61 1.81l3.45-3.45C17.95 1.11 15.23 0 12 0A12 12 0 0 0 1.26 6.63l4 3.09C5.21 6.87 7.87 4.75 12 4.75Z"/>
+      </svg>
+      Continue with Google
+    </button>
+    <p id="auth-status" class="status" role="status"></p>
+    <button id="auth-switch" class="auth-switch" type="button">
+      Need an account? Sign up
+    </button>
+  </aside>
+  <div id="auth-shade"></div>
+
+  <footer class="footer">
+    <div class="logo">
+      <b>G3</b>
+      <span>Group 3 <i>Business</i></span>
+    </div>
+    <p>Premium electronics. Thoughtful support.</p>
+    <div>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <small>© 2026 Group 3 Business.</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

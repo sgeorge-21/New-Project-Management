@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Group 3 Business for sales, repairs or customer feedback.">
+  <title>Contact | Group 3 Business</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="contact">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="topbar">
+    Complimentary delivery over $300
+    <span>•</span>
+    Express repair diagnostics available
+  </div>
+
+  <header class="header">
+    <a class="logo" href="index.html">
+      <b>G3</b>
+      <span>Group 3 <i>Business</i></span>
+    </a>
+
+    <button class="menu" aria-expanded="false">Menu</button>
+
+    <nav aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="news.html">News</a>
+      <a class="active" href="contact.html">Contact</a>
+      <button id="basket" class="basket">
+        Basket
+        <strong>0</strong>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero wrap">
+      <p class="kicker">We’re here to help</p>
+      <h1>
+        Have a question?<br>
+        <em>Let’s talk tech.</em>
+      </h1>
+      <p class="lead">
+        Tell us what you need and a real person from our team will get back to you
+        within one business day.
+      </p>
+    </section>
+
+    <section class="contact-grid">
+      <div class="contact-info">
+        <a href="tel:+231775243700">
+          <b>☎</b>
+          <span>
+            <small>Call the shop</small>
+            <strong>+231775243700</strong>
+          </span>
+        </a>
+
+        <a href="mailto:desiregeorge2005@gmail.com">
+          <b>✉</b>
+          <span>
+            <small>Email us</small>
+            <strong>desiregeorge2005@gmail.com</strong>
+          </span>
+        </a>
+
+        <p>
+          Use the form for questions, repair requests or feedback. Your message is
+          saved securely for our team to follow up.
+        </p>
+      </div>
+
+      <form id="contact-form" class="contact-form">
+        <div class="form-label">
+          01 — Contact / Feedback
+          <span>We reply quickly</span>
+        </div>
+
+        <label>
+          Your name
+          <input
+            name="name"
+            required
+            autocomplete="name"
+            maxlength="120"
+            placeholder="Jane Smith"
+          >
+        </label>
+
+        <label>
+          Email address
+          <input
+            name="email"
+            type="email"
+            required
+            autocomplete="email"
+            maxlength="254"
+            placeholder="jane@example.com"
+          >
+        </label>
+
+        <label>
+          How can we help?
+          <textarea
+            name="message"
+            rows="5"
+            required
+            maxlength="10000"
+            placeholder="Tell us about your device or share feedback..."
+          ></textarea>
+        </label>
+
+        <button class="button primary">
+          Send message
+          <span>→</span>
+        </button>
+        <p class="status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="logo">
+      <b>G3</b>
+      <span>Group 3 <i>Business</i></span>
+    </div>
+    <p>Premium electronics. Thoughtful support.</p>
+    <div>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <small>© 2026 Group 3 Business.</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
